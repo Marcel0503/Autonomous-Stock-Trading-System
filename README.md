@@ -10,8 +10,8 @@ This is determined by the paper_trade variable. By default, the system will use 
 To run the Python script, one has to execute the main/main.py file.
 
 # Structure
-The main folder contains the Python modules.
-The system logs relevant information via text files in the logs directory.
-The daily_stock_data folder contains the historic market data of 6,457 stocks in daily intervals.
-The data_points folder contains a pandas dataframe consisting of the data points with labels extracted from the historic stock data.
+The main folder contains the Python modules.<br>
+The system logs relevant information via text files in the logs directory.<br>
+The daily_stock_data folder contains the historic market data of 6,457 stocks in daily intervals.<br>
+The data_points folder contains a pandas dataframe consisting of the data points with labels extracted from the historic stock data.<br>
 The models folder stores the trained machine-learning models, which are then used to make predictions.
