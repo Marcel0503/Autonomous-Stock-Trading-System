@@ -94,7 +94,7 @@ if __name__ == "__main__":
     # Sets up the logging configuration
     now = datetime.now()
     logging.basicConfig(
-        filename="..\\logs\\" + str(now.day) + "-" + str(now.month) + "-" + str(
+        filename="../logs/" + str(now.day) + "-" + str(now.month) + "-" + str(
             now.year) + '.txt', filemode='a', format='%(levelname)s: %(message)s'
         , level=logging.INFO)
 
