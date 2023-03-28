@@ -39,13 +39,12 @@ def load_hyperparameters():
 
     for items in hyperparameters.items():
         # items[0] is the individual profit_boundary
-        optimal_k_values[items[0]] = items[1]["Optimal k"]
+        optimal_k_values[float(items[0])] = items[1]["Optimal k"]
 
 
 # Makes a prediction whether the stock whose features are given as the data_point list will increase above the given
 # profit_boundary.
 def predict(profit_boundary, data_point):
-    profit_boundary = str(profit_boundary)
     if not optimal_k_values.get(profit_boundary):
         return 0
     k = optimal_k_values[profit_boundary]
